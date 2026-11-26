@@ -55,7 +55,9 @@ header p {
 }
 
 .frame-kpi .kpi-value-alerta {
-    color: #dc2626;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #ff0000;
 }
 
 .frame-kpi .kpi-value {
