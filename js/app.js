@@ -1,8 +1,8 @@
 // Banco de dados inicial simulados
 let veiculos = [
-    {id: 1, placa: "BRA-2E19", modelo: "Volvo FH 540", motorista: "João Pereira", status: "Em Trânsito"},
-    {id: 2, placa: 'JKL-8840', modelo: 'VW Delivery 11.180', motorista: 'Mariana Costa', status: 'Disponível'},
-    {id: 3, placa: 'XYZ-4012', modelo: 'Mercedes Sprinter', motorista: 'Roberto Alves', status: 'Manutenção'}
+    {id: 1, placa: "BRA-2E19", modelo: "Volvo FH 540", motorista: "João Pereira", status: "em_transito"},
+    {id: 2, placa: 'JKL-8840', modelo: 'VW Delivery 11.180', motorista: 'Mariana Costa', status: 'disponivel'},
+    {id: 3, placa: 'XYZ-4012', modelo: 'Mercedes Sprinter', motorista: 'Roberto Alves', status: 'manutencao'}
 ];
 
 let entregas = [
@@ -14,7 +14,7 @@ const formVeiculo = document.getElementById('form-veiculo');
 const formEntrega = document.getElementById('form-entrega');
 const listaVeiculos = document.getElementById('lista-veiculos');
 const listaEntregas = document.getElementById('lista-entregas');
-const selectVeiculoEntrega = document.getElementById("VeiculoId");
+const selectVeiculoEntrega = document.getElementById("veiculoId");
 const inputBusca = document.getElementById("busca-veiculo");
 
 
@@ -40,7 +40,7 @@ function cadastrarVeiculo(event) {
 }
 
 function alterarStatusVeiculo(id) {
-    const ordemStatus = ["Disponível", "Em Trânsito", "Manutenção"];
+    const ordemStatus = ["disponivel", "em_transito", "manutencao"];
     const veiculo = veiculos.find(v => v.id === id);
 
     if (veiculo) {
@@ -71,9 +71,9 @@ function renderizarVeiculos() {
 
 
     // Se o status for "Manutenção", o card ganha a classe .erro
-    if (veiculo.status === 'Manutenção') {
+    if (veiculo.status === 'manutencao') {
         card.classList.add('erro');
-    } else if (veiculo.status === 'Em Trânsito') {
+    } else if (veiculo.status === 'em_transito') {
         card.classList.add('em-transito');
     }
 
@@ -167,7 +167,7 @@ function renderizarEntregas() {
 // KPIs
 function atualizarKPIs() {
     document.getElementById("kpi-total-veiculos").textContent = veiculos.length;
-    document.getElementById("kpi-manutencao").textContent = veiculos.filter(v => v.status === "Manutenção").length;
+    document.getElementById("kpi-manutencao").textContent = veiculos.filter(v => v.status === "manutencao").length;
     document.getElementById("kpi-total-entregas").textContent = entregas.length;
 }
 
