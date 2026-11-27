@@ -1,6 +1,6 @@
 # Projeto Integrador da Disciplina de Desenvolvimento de Interfaces
 ## Tema: Controle de Frota Logística
-Aplicação web para cadastrar veículos, registrar entregas e acompanhar informações básicas da frota. O projeto foi desenvolvido como parte do Projeto Integrador da disciplina de Desenvolvimento de Interfaces.
+Aplicação web para cadastrar veículos, registrar entregas e acompanhar informações básicas da frota. O projeto foi desenvolvido como parte do Projeto Integrador da disciplina de Desenvolvimento de Interfaces (UniCEUB).
 
 ## Desenvolvedores
 - João Vitor Bernardes
