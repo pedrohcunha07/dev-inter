@@ -68,7 +68,10 @@ As principais funções são:
 
 Também é possível usar a extensão **Live Server** no VS Code para executar a página em um servidor local. Ou também a extensão **Live Preview** para visualização diretamente pela IDE.
 
+### Link para acesso da aplicação através do Github Pages: 
+Sistema de Controle de Frota Logística: [pedrohcunha07.github.io/dev-inter/](https://pedrohcunha07.github.io/dev-inter/)
 
+## Observações
 Os dados são simulados e mantidos apenas enquanto a página permanece aberta. Ao atualizar ou fechar o navegador, os novos cadastros são perdidos porque o projeto não utiliza banco de dados ou armazenamento local.
 
 ## Apresentação em slides no link abaixo:
